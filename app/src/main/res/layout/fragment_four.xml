@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FourFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/tv_screen_4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_screen_4"
+        app:layout_constraintBottom_toTopOf="@id/btn_4_to_3">
+
+        <EditText
+            android:layout_margin="16dp"
+            android:id="@+id/et_usia_2"
+            android:gravity="center"
+            android:hint="@string/masukkan_usia"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+        <EditText
+            android:layout_margin="16dp"
+            android:id="@+id/et_alamat_2"
+            android:gravity="center"
+            android:hint="@string/masukkan_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+        <EditText
+            android:layout_margin="16dp"
+            android:id="@+id/et_pekerjaan_2"
+            android:gravity="center"
+            android:hint="@string/masukkan_pekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_text"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btn_4_to_3"
+        android:textAllCaps="false"
+        android:text="@string/to_screen_3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
