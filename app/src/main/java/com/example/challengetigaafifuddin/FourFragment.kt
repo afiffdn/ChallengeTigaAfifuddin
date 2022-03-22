@@ -30,7 +30,9 @@ private var binding:FragmentFourBinding? = null
             val usia = binding?.etUsia2!!.text.toString().toInt()
             val alamat = binding?.etAlamat2!!.text.toString()
             val pekerjaan = binding?.etPekerjaan2!!.text.toString()
+           val nama = FourFragmentArgs.fromBundle(arguments as Bundle).nama
 
+            moveFragmentFourToThird.name = nama
             moveFragmentFourToThird.usia = usia
             moveFragmentFourToThird.alamat = alamat
             moveFragmentFourToThird.pekerjaan = pekerjaan
