@@ -40,17 +40,17 @@
             app:argType="string"
             android:defaultValue="name" />
         <argument
-            android:name="usia"
+            android:name="sisiA"
             app:argType="integer"
             android:defaultValue="0" />
         <argument
-            android:name="alamat"
-            app:argType="string"
-            android:defaultValue="alamat" />
+            android:name="sisiB"
+            app:argType="integer"
+            android:defaultValue="0" />
         <argument
-            android:name="pekerjaan"
-            app:argType="string"
-            android:defaultValue="pekerjaan" />
+            android:name="sisiC"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/fourFragment"

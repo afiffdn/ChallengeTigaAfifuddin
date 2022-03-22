@@ -27,15 +27,15 @@ private var binding:FragmentFourBinding? = null
         super.onViewCreated(view, savedInstanceState)
         binding!!.btn4To3.setOnClickListener { view ->
             val moveFragmentFourToThird = FourFragmentDirections.actionFourFragmentToThirdFragment()
-            val usia = binding?.etUsia2!!.text.toString().toInt()
-            val alamat = binding?.etAlamat2!!.text.toString()
-            val pekerjaan = binding?.etPekerjaan2!!.text.toString()
+            val sisiA = binding?.etUsia2!!.text.toString().toInt()
+            val sisiB = binding?.etAlamat2!!.text.toString().toInt()
+            val sisiC = binding?.etPekerjaan2!!.text.toString().toInt()
            val nama = FourFragmentArgs.fromBundle(arguments as Bundle).nama
 
             moveFragmentFourToThird.name = nama
-            moveFragmentFourToThird.usia = usia
-            moveFragmentFourToThird.alamat = alamat
-            moveFragmentFourToThird.pekerjaan = pekerjaan
+            moveFragmentFourToThird.sisiA = sisiA
+            moveFragmentFourToThird.sisiB = sisiB
+            moveFragmentFourToThird.sisiC = sisiC
             view.findNavController().navigate(moveFragmentFourToThird)
 
 

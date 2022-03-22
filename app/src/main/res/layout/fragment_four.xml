@@ -8,16 +8,26 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/screen_4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_margin="16dp"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:id="@+id/tv_screen_4"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/screen_4"
+        android:text="@string/menghitung_keliling_segitiga"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_screen_4"
         android:layout_margin="16dp"
         android:textStyle="bold"
-        android:textSize="20sp"
-        android:id="@+id/tv_screen_4"/>
+        android:textSize="20sp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +41,7 @@
             android:layout_margin="16dp"
             android:id="@+id/et_usia_2"
             android:gravity="center"
-            android:hint="@string/masukkan_usia"
+            android:hint="@string/masukkan_panjang_sisi_a"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
@@ -41,22 +51,22 @@
             android:layout_margin="16dp"
             android:id="@+id/et_alamat_2"
             android:gravity="center"
-            android:hint="@string/masukkan_alamat"
+            android:hint="@string/masukkan_panjang_sisi_b"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
             android:importantForAutofill="no"
-            android:inputType="text" />
+            android:inputType="number" />
         <EditText
             android:layout_margin="16dp"
             android:id="@+id/et_pekerjaan_2"
             android:gravity="center"
-            android:hint="@string/masukkan_pekerjaan"
+            android:hint="@string/masukkan_panjang_sisi_c"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
             android:importantForAutofill="no"
-            android:inputType="text" />
+            android:inputType="number" />
 
     </LinearLayout>
 

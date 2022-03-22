@@ -15,4 +15,8 @@
     <string name="masukkan_usia">Masukkan Usia</string>
     <string name="masukkan_alamat">Masukkan Alamat</string>
     <string name="masukkan_pekerjaan">Masukkan Pekerjaan</string>
+    <string name="menghitung_keliling_segitiga">Menghitung Keliling Segitiga</string>
+    <string name="masukkan_panjang_sisi_a">Masukkan Panjang Sisi A</string>
+    <string name="masukkan_panjang_sisi_b">Masukkan Panjang Sisi B</string>
+    <string name="masukkan_panjang_sisi_c">Masukkan Panjang Sisi C</string>
 </resources>

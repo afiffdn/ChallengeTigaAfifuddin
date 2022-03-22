@@ -27,15 +27,16 @@ class ThirdFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val umur = ThirdFragmentArgs.fromBundle(arguments as Bundle).usia
+
+        val sisiB = ThirdFragmentArgs.fromBundle(arguments as Bundle).sisiB
         var biodata = ThirdFragmentArgs.fromBundle(arguments as Bundle).name
-        if (umur > 0){
-            val nilai = if (umur % 2 == 0) "\nUsia Anda Genap" else "\nUsia anda Ganjil"
-            val alamat = "\n${ThirdFragmentArgs.fromBundle(arguments as Bundle).alamat}"
-            val pekerjaan = "\n${ThirdFragmentArgs.fromBundle(arguments as Bundle).pekerjaan}"
-            biodata += nilai + alamat + pekerjaan
-
-
+        if (sisiB > 0){
+            val sisA = " \nSisi A :${ThirdFragmentArgs.fromBundle(arguments as Bundle).sisiA}"
+            val sisB = "\n Sisi A : $sisiB"
+            val sisC = "\nSisi C :${ThirdFragmentArgs.fromBundle(arguments as Bundle).sisiC}"
+            val jumlah = sisA + sisB + sisC
+            val Hasil = "\nKeliling Segitiga tersebut adalah : $jumlah"
+            biodata += sisA + sisB + sisC + Hasil
         }
             binding?.tvNama!!.text = biodata
 //            val nama=ThirdFragmentArgs.fromBundle(arguments as Bundle).name
