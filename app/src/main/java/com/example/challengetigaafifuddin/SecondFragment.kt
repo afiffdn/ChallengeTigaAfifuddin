@@ -26,7 +26,7 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.btnToScreen3?.setOnClickListener{view ->
-        val moveFragmentThird = SecondFragmentDirections.actionSecondFragmentToThirdFragment()
+        val moveFragmentThird = SecondFragmentDirections.actionSecondFragmentToThirdFragment(Parcelable(0,0,0))
         val nama= binding!!.etNama.text.toString()
 
         moveFragmentThird.name = nama

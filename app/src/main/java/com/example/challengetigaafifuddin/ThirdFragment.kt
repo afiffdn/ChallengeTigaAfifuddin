@@ -7,10 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.challengetigaafifuddin.databinding.FragmentThirdBinding
 
 class ThirdFragment : Fragment() {
-    private var binding: FragmentThirdBinding? = null
+    private var _binding: FragmentThirdBinding? = null
+    private val binding get() =_binding!!
+    private val args:ThirdFragmentArgs by navArgs()
 
 
 
@@ -18,8 +21,8 @@ class ThirdFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentThirdBinding.inflate(inflater, container, false)
-        val view = binding?.root
+        _binding = FragmentThirdBinding.inflate(inflater, container, false)
+        val view = binding.root
         // Inflate the layout for this fragment
         return view
     }
@@ -28,27 +31,30 @@ class ThirdFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val sisiB = ThirdFragmentArgs.fromBundle(arguments as Bundle).sisiB
+        val parcel = args.hitung
+        val sisiB = parcel.sisiB
+        val sisiA = parcel.sisiA
+        val sisiC = parcel.sisiC
         var biodata = ThirdFragmentArgs.fromBundle(arguments as Bundle).name
         if (sisiB > 0){
-            val sisA = " \nSisi A :${ThirdFragmentArgs.fromBundle(arguments as Bundle).sisiA}"
-            val sisB = "\n Sisi A : $sisiB"
-            val sisC = "\nSisi C :${ThirdFragmentArgs.fromBundle(arguments as Bundle).sisiC}"
-            val jumlah = sisA + sisB + sisC
-            val Hasil = "\nKeliling Segitiga tersebut adalah : $jumlah"
+            val sisA = " \nSisi A :${args.hitung.sisiA}"
+            val sisB = "\n Sisi B : $sisiB"
+            val sisC = "\nSisi C :${args.hitung.sisiC}"
+            val jumlah = sisiA + sisiB + sisiC
+            val Hasil = "\nKeliling Segitiga adalah : $jumlah"
             biodata += sisA + sisB + sisC + Hasil
         }
-            binding?.tvNama!!.text = biodata
+            binding.tvNama.text = biodata
 //            val nama=ThirdFragmentArgs.fromBundle(arguments as Bundle).name
 //            //nampilin data dari fragment 2
            // binding?.tvNama!!.text = biodata
 
             //button ke fragment 4
-            binding!!.btnToScreen4.setOnClickListener { view ->
+            binding.btnToScreen4.setOnClickListener { view ->
                 val moveFragmentFour = ThirdFragmentDirections.actionThirdFragmentToFourFragment()
-                val nama= binding!!.tvNama.text.toString()
+                val nama= binding.tvNama.text.toString()
 
-                moveFragmentFour.nama = nama
+                moveFragmentFour.name = nama
                 view.findNavController().navigate(moveFragmentFour)
 
             }

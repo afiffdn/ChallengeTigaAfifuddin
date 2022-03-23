@@ -45,7 +45,6 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
-            android:importantForAutofill="no"
             android:inputType="number" />
         <EditText
             android:layout_margin="16dp"
@@ -55,7 +54,6 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
-            android:importantForAutofill="no"
             android:inputType="number" />
         <EditText
             android:layout_margin="16dp"
@@ -65,7 +63,6 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
-            android:importantForAutofill="no"
             android:inputType="number" />
 
     </LinearLayout>
