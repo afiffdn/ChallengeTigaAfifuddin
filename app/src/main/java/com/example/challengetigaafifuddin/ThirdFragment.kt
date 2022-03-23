@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isGone
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.challengetigaafifuddin.databinding.FragmentThirdBinding
@@ -43,6 +44,7 @@ class ThirdFragment : Fragment() {
             val jumlah = sisiA + sisiB + sisiC
             val Hasil = "\nKeliling Segitiga adalah : $jumlah"
             biodata += sisA + sisB + sisC + Hasil
+            binding.btnToScreen4.visibility = View.GONE
         }
             binding.tvNama.text = biodata
 //            val nama=ThirdFragmentArgs.fromBundle(arguments as Bundle).name

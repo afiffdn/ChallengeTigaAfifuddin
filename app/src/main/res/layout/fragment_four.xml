@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FourFragment">
+    tools:context=".FourFragment"
+    android:background="@color/binar">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -15,6 +16,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     android:layout_margin="16dp"
+        android:textColor="@color/white"
     android:textStyle="bold"
     android:textSize="20sp"
     android:id="@+id/tv_screen_4"/>
@@ -27,7 +29,8 @@
         app:layout_constraintTop_toBottomOf="@id/tv_screen_4"
         android:layout_margin="16dp"
         android:textStyle="bold"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +48,9 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
         <EditText
             android:layout_margin="16dp"
             android:id="@+id/et_alamat_2"
@@ -54,7 +59,9 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>/>
         <EditText
             android:layout_margin="16dp"
             android:id="@+id/et_pekerjaan_2"
@@ -63,11 +70,13 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/edit_text"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>/>
 
     </LinearLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -76,6 +85,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/btn_4_to_3"
         android:textAllCaps="false"
-        android:text="@string/to_screen_3"/>
+        android:text="@string/to_screen_3"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/binar"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
