@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SecondFragment"
-    android:background="@color/binar">
+    tools:context=".SecondFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -19,16 +18,9 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_margin="16dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/red"
+        android:layout_margin="16dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        app:layout_constraintTop_toBottomOf="@id/Tv_dua"
-        app:layout_constraintBottom_toTopOf="@id/et_nama"
-        android:scaleType="centerCrop"/>
 
     <EditText
         android:id="@+id/et_nama"
@@ -37,34 +29,41 @@
         android:layout_margin="16dp"
         android:background="@drawable/edit_text"
         android:hint="@string/masukkan_nama"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
         android:importantForAutofill="no"
         android:inputType="text"
         android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
         app:layout_constraintBottom_toTopOf="@id/btn_to_screen_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Tv_dua"
-        app:layout_constraintVertical_bias="0.952" />
+        app:layout_constraintVertical_bias="0.906" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_to_screen_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-thin"
         android:text="@string/go_to_screen_3"
         android:textAllCaps="false"
+        android:textStyle="bold"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/binar"
-        android:fontFamily="sans-serif-thin"
-        android:textStyle="bold"
-        android:elevation="20dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
+        app:layout_constraintVertical_bias="0.549" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_screen_3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

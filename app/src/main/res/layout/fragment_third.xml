@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/binar"
     tools:context=".ThirdFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,7 +16,7 @@
         android:id="@+id/Tv_tiga"
         android:text="Hitung Keliling Segitiga\nScreen 3"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/red"
         app:layout_constraintBottom_toTopOf="@id/btn_to_screen_4"
         />
 
@@ -39,17 +38,25 @@
         android:id="@+id/btn_to_screen_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:fontFamily="sans-serif-thin"
         android:text="@string/go_to_screen_4"
         android:textAllCaps="false"
-        app:cornerRadius="15dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/binar"
-        android:fontFamily="sans-serif-thin"
         android:textStyle="bold"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintVertical_bias="0.547" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/counttt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_screen_4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,10 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment"
-    android:background="@color/binar">
+    tools:context=".FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/count"
+        app:layout_constraintBottom_toTopOf="@+id/btn_to_screen_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_satu"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
         android:id="@+id/Tv_satu"
         android:layout_width="wrap_content"
@@ -15,38 +27,28 @@
         android:layout_margin="16dp"
         android:text="Hitung Keliling Segitiga\nScreen 1"
         android:textAlignment="center"
+        android:textColor="@color/red"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/white"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/logo"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@id/btn_to_screen_2"
-        app:layout_constraintTop_toBottomOf="@id/Tv_satu"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_to_screen_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#E8505B"
+        android:fontFamily="sans-serif-thin"
         android:text="@string/go_to_screen_2"
         android:textAllCaps="false"
-        android:textColor="@color/binar"
-        app:cornerRadius="15dp"
-        android:fontFamily="sans-serif-thin"
         android:textStyle="bold"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819" />
+        app:layout_constraintVertical_bias="0.655" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
